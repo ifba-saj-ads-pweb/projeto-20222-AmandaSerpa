@@ -2,7 +2,7 @@ body {
 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color:bisque;
+  background-color:beige;
 
 }
 
@@ -13,11 +13,11 @@ h1,h2{
 
 }
 
-.Pinicial {
+.Principal {
 
-     margin: 0 auto;
-     width: 960px;
-     
+  margin: 0 auto;
+  width: 960px;
+    
 }
 
 
@@ -25,7 +25,12 @@ h1,h2{
 
   border-color: brown;
   border: 1px solid brown;
+  background: azure;
   margin-bottom: 20px;
   padding: 10px;
+  text-align: center;
+  color: brown;
 
 }
+
+
