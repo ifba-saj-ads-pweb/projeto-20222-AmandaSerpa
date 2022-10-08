@@ -1,55 +1,39 @@
 body {
-
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color:bisque;
   margin: 0;
-  padding: 90;
+  padding: 0;
   box-sizing: border-box;
-  
- 
-
 }
 
-h1,h2{
-    
-    color:brown;
-    text-align: center;
-    margin-top: 50px;
-
-}
-
-.Principal {
-
-  margin: 0 auto;
+.container {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 20vh 72vh 8vh;
   grid-template-areas: "header header"
                        "menu content"
                        "footer footer";
-    
 }
 
-@media only screen and (max-width: 1000px) {
-  
-  .Principal {
-    background-color: bisque;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 15vh 60vh 10vh;
-    grid-template-areas: "header "
-                         "menu "
-                         "content"
-                         "footer ";
-  }
+header {
+  background-color: brown;
+  grid-area: header;
 }
+
+aside {
+
+  background-color: tomato;
+  grid-area: menu;
+}
+
+main {
+  grid-area: content;
+  background: bisque;
+}
+
+
 
 .paragrafo {
 
-  background: bisque;
-  margin: 50px 300px 50px 300px;
-  /*ordem 
-  topo direita embaixo esquerda*/
+  
   padding: 10px;
   text-align: center;
   color: brown;
@@ -59,45 +43,14 @@ h1,h2{
 }
 
 .cabecalho {
-
-  width: 100%;
-  float: left;
-  padding: 0px 50px 20px 20px;
   background-color: brown;
-
 }
 
-.logo a {
 
-  width: 168px;
-  height: 200px;
-  float: left;
-  background: url(../png_ifba.png) no-repeat;
-  font-size: 0;
-  
-  
-}
 
-main {
 
-  grid-area: content;
-  
-    
-}
 
-header {
-  
-  background-color: brown;
-  grid-area: header;
-  
-  
-}
 
-menu {
-
-  background-color: tomato;
-  grid-area: menu;
-}
 
 footer {
 
@@ -117,7 +70,7 @@ footer {
     text-align: center;
     user-select: none;
     cursor: pointer;
-    margin: 50px 500px 50px 700px;
+    
     /*ordem 
     topo direita embaixo esquerda*/
     box-shadow: 2px 2px 2px tomato;   
